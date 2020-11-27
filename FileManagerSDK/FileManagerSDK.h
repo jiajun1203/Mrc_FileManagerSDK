@@ -6,6 +6,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <FileManagerSDK/MRC_FileItem.h>
+#import <FileManagerSDK/MRC_LocalFileItem.h>
+#import <FileManagerSDK/MRC_FileManager.h>
+
 
 //! Project version number for FileManagerSDK.
 FOUNDATION_EXPORT double FileManagerSDKVersionNumber;

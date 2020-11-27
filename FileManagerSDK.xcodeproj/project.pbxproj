@@ -10,6 +10,14 @@
 		65B1912B256E8F04007FA60E /* FileManagerSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65B19121256E8F04007FA60E /* FileManagerSDK.framework */; };
 		65B19130256E8F04007FA60E /* FileManagerSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 65B1912F256E8F04007FA60E /* FileManagerSDKTests.m */; };
 		65B19132256E8F04007FA60E /* FileManagerSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 65B19124256E8F04007FA60E /* FileManagerSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65C8485A256E927400166844 /* MRC_FileItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 65C84858256E927400166844 /* MRC_FileItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65C8485B256E927400166844 /* MRC_FileItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C84859256E927400166844 /* MRC_FileItem.m */; };
+		65C84860256E928700166844 /* MRC_LocalFileItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 65C8485E256E928700166844 /* MRC_LocalFileItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65C84861256E928700166844 /* MRC_LocalFileItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 65C8485F256E928700166844 /* MRC_LocalFileItem.m */; };
+		B47E130E2570A91B00036F48 /* MRC_FileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B47E130C2570A91B00036F48 /* MRC_FileManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B47E130F2570A91B00036F48 /* MRC_FileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B47E130D2570A91B00036F48 /* MRC_FileManager.m */; };
+		B47E131A2570E74200036F48 /* MRC_PrivateData.h in Headers */ = {isa = PBXBuildFile; fileRef = B47E13182570E74200036F48 /* MRC_PrivateData.h */; };
+		B47E131B2570E74200036F48 /* MRC_PrivateData.m in Sources */ = {isa = PBXBuildFile; fileRef = B47E13192570E74200036F48 /* MRC_PrivateData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +37,15 @@
 		65B1912A256E8F04007FA60E /* FileManagerSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FileManagerSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65B1912F256E8F04007FA60E /* FileManagerSDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileManagerSDKTests.m; sourceTree = "<group>"; };
 		65B19131256E8F04007FA60E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65C84858256E927400166844 /* MRC_FileItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRC_FileItem.h; sourceTree = "<group>"; };
+		65C84859256E927400166844 /* MRC_FileItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRC_FileItem.m; sourceTree = "<group>"; };
+		65C8485E256E928700166844 /* MRC_LocalFileItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRC_LocalFileItem.h; sourceTree = "<group>"; };
+		65C8485F256E928700166844 /* MRC_LocalFileItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRC_LocalFileItem.m; sourceTree = "<group>"; };
+		B47E12F725708D4300036F48 /* MRC_FileTypeProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRC_FileTypeProtocol.h; sourceTree = "<group>"; };
+		B47E130C2570A91B00036F48 /* MRC_FileManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRC_FileManager.h; sourceTree = "<group>"; };
+		B47E130D2570A91B00036F48 /* MRC_FileManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRC_FileManager.m; sourceTree = "<group>"; };
+		B47E13182570E74200036F48 /* MRC_PrivateData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MRC_PrivateData.h; sourceTree = "<group>"; };
+		B47E13192570E74200036F48 /* MRC_PrivateData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRC_PrivateData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +88,11 @@
 		65B19123256E8F04007FA60E /* FileManagerSDK */ = {
 			isa = PBXGroup;
 			children = (
+				65C84857256E921700166844 /* File */,
 				65B19124256E8F04007FA60E /* FileManagerSDK.h */,
+				B47E13182570E74200036F48 /* MRC_PrivateData.h */,
+				B47E13192570E74200036F48 /* MRC_PrivateData.m */,
+				B47E12F725708D4300036F48 /* MRC_FileTypeProtocol.h */,
 				65B19125256E8F04007FA60E /* Info.plist */,
 			);
 			path = FileManagerSDK;
@@ -86,6 +107,19 @@
 			path = FileManagerSDKTests;
 			sourceTree = "<group>";
 		};
+		65C84857256E921700166844 /* File */ = {
+			isa = PBXGroup;
+			children = (
+				B47E130C2570A91B00036F48 /* MRC_FileManager.h */,
+				B47E130D2570A91B00036F48 /* MRC_FileManager.m */,
+				65C84858256E927400166844 /* MRC_FileItem.h */,
+				65C84859256E927400166844 /* MRC_FileItem.m */,
+				65C8485E256E928700166844 /* MRC_LocalFileItem.h */,
+				65C8485F256E928700166844 /* MRC_LocalFileItem.m */,
+			);
+			path = File;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -93,7 +127,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65C8485A256E927400166844 /* MRC_FileItem.h in Headers */,
+				65C84860256E928700166844 /* MRC_LocalFileItem.h in Headers */,
+				B47E130E2570A91B00036F48 /* MRC_FileManager.h in Headers */,
 				65B19132256E8F04007FA60E /* FileManagerSDK.h in Headers */,
+				B47E131A2570E74200036F48 /* MRC_PrivateData.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +180,9 @@
 		65B19118256E8F04007FA60E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = MRC_;
 				LastUpgradeCheck = 1210;
+				ORGANIZATIONNAME = "Mr.陈";
 				TargetAttributes = {
 					65B19120256E8F04007FA60E = {
 						CreatedOnToolsVersion = 12.1;
@@ -193,6 +233,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B47E130F2570A91B00036F48 /* MRC_FileManager.m in Sources */,
+				65C8485B256E927400166844 /* MRC_FileItem.m in Sources */,
+				B47E131B2570E74200036F48 /* MRC_PrivateData.m in Sources */,
+				65C84861256E928700166844 /* MRC_LocalFileItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,7 +311,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -323,7 +367,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -348,9 +392,11 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.www.FileManagerSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -370,9 +416,11 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.www.FileManagerSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
